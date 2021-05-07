@@ -1,0 +1,16 @@
+{
+  "name": "node-js-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ceasar": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elena Sevastian",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "commander": "^7.2.0"
+  }
+}
