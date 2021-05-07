@@ -13,7 +13,7 @@ const exitOnError = (error, exitCode) => {
 };
 
 const handleInputErrors = async (shift, action, input, output) => {
-  const shiftIsValid = !!shift && Number.isInteger(shift);
+  const shiftIsValid = shift === 0 || (!!shift && Number.isInteger(shift));
   const actionIsValid = action === 'encode' || action === 'decode';
 
   if (input) {
@@ -37,7 +37,7 @@ const handleInputErrors = async (shift, action, input, output) => {
     }
   }
 
-  if (!shift || !action) {
+  if ((!shift && shift !== 0) || !action) {
     exitOnError(errors.required, 9);
   }
 
