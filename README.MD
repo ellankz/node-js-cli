@@ -41,7 +41,7 @@ $ ceasar_cli -s 29 -i input.txt -o output.txt -a encode
 ```
 
 ```bash
-$ ceasar_cli --shift 29 --input input.txt --output output.txt --aсtion encode
+$ ceasar_cli --shift 29 --input input.txt --output output.txt --action encode
 ```
 
 > input.txt
