@@ -2,7 +2,7 @@
   "name": "node-js-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "bin/index.js",
+  "main": "index.js",
   "scripts": {
     "ceasar": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +14,6 @@
     "commander": "^7.2.0"
   },
   "bin": {
-    "ceasar_cli": "./bin/index.js"
+    "ceasar_cli": "./index.js"
   }
 }
