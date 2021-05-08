@@ -2,10 +2,10 @@
 const { program } = require('commander');
 
 program
-  .option('-s, --shift <shift>', 'output extra debugging')
-  .option('-a, --action <action>', 'small pizza size')
-  .option('-o, --output <output>', 'flavour of pizza')
-  .option('-i, --input <intput>', 'flavour of pizza');
+  .option('-s, --shift <number>', 'shift number')
+  .option('-a, --action <action>', 'encode/decode')
+  .option('-o, --output <file>', 'output file')
+  .option('-i, --input <file>', 'input file');
 
 program.parse(process.argv);
 
