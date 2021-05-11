@@ -16,7 +16,7 @@ $ git clone https://github.com/ellankz/node-js-cli.git
 
 ```bash
 $ cd node-js-cli
-$ npm install -g .
+$ npm i
 ```
 
 ## Usage
@@ -35,13 +35,12 @@ Same works for output file, if you dont provide it, the result will be printed i
 ## Usage example
 
 1. _-a (--action)_ is **encode**
-
 ```bash
-$ ceasar_cli -s 29 -i input.txt -o output.txt -a encode
+$ node index -s 29 -i input.txt -o output.txt -a encode
 ```
 
 ```bash
-$ ceasar_cli --shift 29 --input input.txt --output output.txt --action encode
+$ node index --shift 29 --input input.txt --output output.txt --action encode
 ```
 
 > input.txt
@@ -54,7 +53,7 @@ $ ceasar_cli --shift 29 --input input.txt --output output.txt --action encode
    _Decoding encoded initial string with the same -s(--shift) number produces the initial string._
 
 ```bash
-$ ceasar_cli --action decode --shift 29 --input encoded.txt --output plain.txt
+$ node index --action decode --shift 29 --input encoded.txt --output plain.txt
 ```
 
 > encoded.txt
@@ -66,7 +65,7 @@ $ ceasar_cli --action decode --shift 29 --input encoded.txt --output plain.txt
 3. _(Optional) Negative shift handling_
 
 ```bash
-$ ceasar_cli --action encode --shift -1 --input plain.txt --output encoded.txt
+$ node index --action encode --shift -1 --input plain.txt --output encoded.txt
 ```
 
 > plain.txt
